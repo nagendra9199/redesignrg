@@ -166,6 +166,51 @@
         opacity: 0.5;
         
     }
+
+
+
+
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropdown button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
     
 
 
@@ -267,6 +312,11 @@
                 
                 background-image: linear-gradient(to bottom,rgb(55, 141, 5) 80%,white);
             }
+
+
+
+
+
             
 
             @media screen and (max-width:600px) {
@@ -305,11 +355,26 @@
                 }
                 .animation-container{
                     width:100vw;
-                    height:25vh;
+                    height:50vh;
                 }
                 .animation-container img{
                     transform: scale(0.8);
+                    position: relative;
+                    left:-35%;
                     
+                }
+                .quote-container{
+                    text-align: end;
+                    font-size:17px;
+                }
+                .logo{
+                    transform: scale(0.5);
+                    left:-23%;
+                    top:-14%;
+                    position: relative;
+                }
+                .header{
+                    height:50px;
                 }
             }
     
@@ -340,6 +405,14 @@
 
                     </ul>
                 </div>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()">Menu</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#home">Home</a>
+                      <a href="#about">About</a>
+                      <a href="#contact">Contact</a>
+                    </div>
+                  </div>
 
                 </div>
             </div>
@@ -411,6 +484,16 @@
                         }, index * 2000);
                       });
                     });
+
+
+                    function toggleDropdown() {
+                        var dropdownContent = document.getElementById("myDropdown");
+                        if (dropdownContent.style.display === "block") {
+                            dropdownContent.style.display = "none";
+                        } else {
+                            dropdownContent.style.display = "block";
+                        }
+                        }   
                   </script>
         </body>
     </head>
