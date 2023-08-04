@@ -3,6 +3,7 @@
     <head>
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
              .header{
                 background-color:#ffffff;
@@ -258,6 +259,7 @@
                 width: 40vw;
                 height: 20vh;
                 position:absolute;
+                
                 top:130%;
                 left: -50%; /* Initially hides the content off-screen to the left */
                 background-color: white;
@@ -333,7 +335,7 @@
 
             }
             .latest-container h1{
-                color:rgb(17, 8, 4);
+                color:rgb(12, 12, 12);
             }
             .l-image-card{
                 width:18vw;
@@ -343,7 +345,7 @@
             .l-image-card h1,p{
                 padding-left: 5px;
                 font-size:18px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                
 
             }
             .l-image-card p{
@@ -366,8 +368,61 @@
             
             .latest-description{
                 color:#fff;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
             
+
+
+
+            .hide-container{
+                display: none;
+            }
+
+            .latest-container-mobile{
+                background-image: url("images/latest new.jpg");
+                background-size: cover;
+                height:150px;
+                display: flex;
+                justify-content: center;
+                
+                
+                
+            }
+            .latest-heading-mobile{
+                font-size:10px;
+            }
+            .l-image-card-mobile{
+                width:18vw;
+                margin:5px;
+                padding: 5px;
+                
+                
+            }
+            .l-image-card-mobile p{
+                height:10vh;
+                overflow: hidden;
+                overflow-y: scroll;
+                -ms-overflow-style: none; 
+                scrollbar-width: none;
+                background-color: #ffffff;
+                border-radius: 10px;
+            }
+            .l-image-card-mobile p::-webkit-scrollbar {
+                display: none;
+            }
+            .l-image-card-mobile img{
+                height:10vh;
+                width:18vw;
+                position:relative;
+                
+                padding-bottom:0px;
+            }
+            
+            .latest-description-mobile{
+                color:#070707;
+                font-size:10px;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
 
 
 
@@ -448,9 +503,12 @@
                     left:-200%;
                 }
                 .latest-container{
-                    position: absolute;
-                    top:280%;
+                    display: none;
                 }
+                .hide-container{
+                    display:block;
+                }
+                
             }
     
 
@@ -588,8 +646,55 @@
                     
         
                 </div>
-
-
+                <div style="height:600px"></div>
+                <div class="hide-container">
+                <div>
+                    <h1>Latest Activity</h1>
+                </div>
+                <div>
+                <div class="latest-container-mobile">
+                    
+                    <div class="l-card-mobile">
+                        <div class="l-image-card-mobile">
+                            <img src="images\rg-2.JPG"/>
+                            <h1 class="latest-heading-mobile" style="color:white">Impact on Society and Devolopment</h1>
+                            <p class="latest-description-mobile">Chinna Rajappa's political career has had a profound impact 
+                                on society. His relentless efforts in infrastructure 
+                                development have improved connectivity, enhancing the 
+                                socio-economic progress of communities. His focus on rural 
+                                empowerment has uplifted marginalized sections, providing them 
+                                with opportunities and resources. By championing good governance, he has 
+                                inspired a culture of transparency and accountability in public service.</p>
+                        </div>
+                    </div>
+                    <div class="l-card-mobile">
+                        <div class="l-image-card-mobile">
+                            <img src="images\FB_IMG_1690623093406.jpg"/>
+                            <h1 class="latest-heading-mobile" style="color:white">Commitment to Good Governance</h1>
+                            <p class="latest-description-mobile">Throughout his political journey, Chinna Rajappa has been a staunch 
+                                advocate for good governance and administrative reforms. He firmly 
+                                believed in transparency, accountability, and efficiency in public 
+                                administration. Rajappa introduced measures to streamline processes, 
+                                eliminate corruption, and enhance service delivery. His commitment to 
+                                ethical leadership and effective governance has set an example for others 
+                                to follow.</p>
+                        </div>
+                    </div>
+                    <div class="l-card-mobile">
+                        <div class="l-image-card-mobile">
+                            <img src="images\rg-7.JPG"/>
+                            <h1 class="latest-heading-mobile" style="color:white">Advocacy for Rural Development</h1>
+                            <p class="latest-description-mobile">Chinna Rajappa's advocacy for rural development has been a cornerstone
+                                 of his political career. He recognized the significance of uplifting 
+                                 rural communities and ensuring their holistic growth. Through his efforts, 
+                                 he championed the cause of agricultural development, rural infrastructure, 
+                                 and poverty alleviation. His initiatives aimed to bridge the gap between 
+                                 urban and rural areas, empowering the marginalized and improving their 
+                                 quality of life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
