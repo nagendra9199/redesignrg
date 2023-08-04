@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+             .header{
+                background-color:#ffffff;
+                background-size: cover;
+                padding:5px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                z-index: 100;
+                height:100px
+                
+
+            }
+            .logo{
+                
+                width:230px;
+                padding-top: 15px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin-left:30px;
+                padding-left:10px;
+                
+                
+
+            
+            }
+            .heading{
+                font-size:19px;
+                color:#0f0f0f;
+                text-shadow: 1px 1px #9ab7cc;
+            }
+            .off-web{
+                color:#0e0d0d;
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size:15px;
+                padding-bottom: 7px;
+                
+            }
+            .navbar{
+                display:flex;
+                flex-direction: row;
+                margin-right:40px;
+                margin-top: 33px;
+                
+
+            }
+            .nav-items{
+                padding-left:40px;
+                list-style-type: none;
+                
+            }
+            .list{
+                color:#0c0c0c;
+                text-decoration: none;
+                font-weight: bold;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            }
+            .list:hover{
+                text-decoration: overline;
+            }
+            
+            .content{
+                color:#ffffff;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size:15px;
+                font-weight: normal;
+                padding-left: 180px;
+                padding-top: 190px;
+            }
+            
+            .social-icons {
+                font-size: 24px;
+                position: absolute;
+                top: 35%;
+                left: 95%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            .social-icons a {
+                margin-right: 10px;
+                color: #e70b0b;
+                text-decoration: none;
+                padding: 5px;
+                background-color: rgba(255, 255, 255, 0.7);
+                border-radius: 50%;
+                margin:10px;
+            }
+            .slideshow-container {
+                max-width: 100%;
+                padding-bottom:100px;
+                
+                
+            }
+            .animation-container img{
+                transform: scale(2);
+                filter: drop-shadow(0px 5px 20px  yellow);
+            }
+
+            .rajappa-new{
+    max-width: 350px;
+      max-height: 650px;
+      
+}
+.animation-container {
+        width: 100%;
+        height: 100vh;
+        background:linear-gradient(to right,white,yellow);
+        background-image: url("images/bg6.png");
+        background-size: cover;
+        display: flex;
+      
+        align-items: center;
+        overflow: hidden;
+    }
+    .rajappa-new {
+      opacity: 0;
+      position: relative;
+      bottom: -100px;
+      animation: slideInAndFade 3s forwards;
+      padding-top:120px;
+    }
+    @keyframes slideInAndFade {
+      to {
+        opacity: 1;
+        bottom: 0;
+      }
+    }
+    .quote-container {
+      display: none;
+      position: absolute;
+      
+      transform: translateX(-50%);
+      text-align: center;
+      animation: slideInAndFade 3s forwards;
+      color: #fcf8f8;
+      left:60%;
+      align-self: center;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 40px;
+      font-weight: bolder;
+      text-shadow: 2px 6px  rgb(7, 7, 7);
+      
+
+      animation: fadeInQuote 1s forwards;
+    }
+    @keyframes fadeInQuote {
+      to {
+        opacity: 1;
+      }
+    }
+    .show-quote {
+      display: block;
+    }
+
+
+
+
+    .logo{
+        display: flex;
+
+    }
+    .logo img{
+        margin-right:10px;
+        width: 4.5em;
+        height:4.5em;
+        border-radius:50%;
+        box-shadow:  0px 0px 5px 5px yellow;
+    }
+    .rajappa-new1 {
+        opacity: 0.5;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .el{
+                display:flex;
+                flex-direction:row;
+                margin-top:10px;
+                font-family: cursive;
+                line-height:01;
+                color:rgb(88, 87, 87);
+
+            }
+            .el h3 {
+                font-weight: bold;
+                color:rgb(63, 61, 61);
+            }
+                
+            
+           .el-img img{
+
+            box-shadow:1px 1px 20px 6px rgb(37, 155, 43);
+            border-radius: 30px;
+            transform: scale(0.8);
+            display: block;
+            position:relative;
+            right:-190%;
+            top:-10%;
+  
+         }
+            .el-content{
+                padding:20px;
+                box-shadow: 10px 2px 20px 2px green;
+                border-radius:100px 0px 100px 0px;
+                width: 40vw;
+                height: 20vh;
+                position:absolute;
+                top:130%;
+                left: -50%; /* Initially hides the content off-screen to the left */
+                background-color: white;
+                transition: left 1s ease-in-out; 
+            }
+            .el-content1{
+                padding:20px;
+                box-shadow: 10px 2px 20px 2px green;
+                border-radius:100px 0px 100px 0px;
+                width: 40%;
+                height: 20%;
+                position:absolute;
+                left:60;
+                top:160%;
+                left: -100%; /* Initially hides the content off-screen to the left */
+                background-color: white;
+                transition: left 1.5s ease-in-out; 
+            }
+            .el-content2{
+                padding:20px;
+                box-shadow: 10px 2px 20px 2px green;
+                border-radius:100px 0px 100px 0px;
+                width: 40%;
+                height: 20%;
+                position:absolute;
+                left:60;
+                top:190%;
+                left: -100%; /* Initially hides the content off-screen to the left */
+                background-color: white;
+                transition:  2s ease-in-out;
+            }
+            .el:hover .el-content {
+            left: 10%; /* Show the content on hover by sliding it from left to right */
+            }
+            .el:hover .el-content1 {
+            left: 10%; /* Show the content on hover by sliding it from left to right */
+            }
+            .el:hover .el-content2 {
+            left: 10%; /* Show the content on hover by sliding it from left to right */
+            }
+
+
+            .bio-head h1{
+                text-align: center;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color:transparent;
+                font-family: cursive;
+                padding: 10px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 5px 5px 5px green;
+                
+                background-image: linear-gradient(to bottom,rgb(55, 141, 5) 80%,white);
+            }
+            
+
+            @media screen and (max-width:600px) {
+                .el-img img{
+                    right:1%;
+                    transform: scale(0.5);
+                    top:-25%;
+                }
+                
+                
+                .el-content,.el-content1,.el-content2{
+                    height:35vh;
+                    width:50vw;
+                    background:linear-gradient(to bottom,white 20%,rgba(15, 247, 73, 0.363) );
+                    border-radius:20px ;
+                    box-shadow: 2px 2px 30px 3px rgb(118, 218, 168);
+                    transition: 11111111111111111111s;
+                    
+                }
+                .el-content{
+                    top:60%;
+                    left:33.5%;
+                    
+
+                }
+                .el-content1{
+                    top:100%;
+                    left:33.5%;
+                }
+                .el-content2{
+                    top:130%;
+                    left:33.5%;
+                }
+            }
+    
+
+
+
+        </style>
+        <body>
+
+            <div class="header">
+
+                <div class="logo">
+                    <img src="images\1517285382705-removebg-preview.png">
+                    <h1 class="heading">CHINARAJAPPA
+                        NIMMAKAYALA
+                    </h1>
+                    
+
+                    
+                </div>
+                <div class="nav">
+                    <ul class="navbar">
+                        <li class="nav-items"><a href="#homeContainer" class="list">Home</a></li>
+                        <li class="nav-items"><a href="#bioContainer" class="list">Biography</a></li>
+                        <li class="nav-items"><a href="#latestContainer" class="list">latest Activities</a></li>
+                        <li class="nav-items"><a href="#galleryContainer" class="list">Gallery</a></li>
+                        <li class="nav-items"><a href="#socialContainer" class="list">Social Media</a></li>
+
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+            <div class="main-container" id="homeContainer">                  
+                  
+                
+                <div class="slideshow-container">
+                    <div class="animation-container">
+                  <img src="images/crg.png" class="rajappa-new " />
+                  <div class="quote-container" id="quote1"> A Remarkable Journey of Dedication and Leadership </div>
+                  
+                </div>
+                  </div>
+                </div>
+
+                <div class="biography-main-container">
+
+                    <div class="bio-head"><h1>BIOGRAPHY</h1></div>
+
+        <div class ="el">
+            <div class="el-img">
+                <img src="images\rgg.png">
+                
+
+            </div>
+            <div class="el-content">
+                <h3>Early life and Education</h3>
+                <p>Nimmakayala Chinna Rajappa was born in Pedagadavalli, Uppalaguptam Zone, East Godavari District. From an early age, he displayed a keen interest in social welfare and politics, nurturing a deep-seated desire to serve his community.  He completed his post-graduation in Master of Arts.</p>
+
+            </div>
+
+            <div class="el-content1">
+                <h3>Political Journey and Contributions </h3>
+                <p>Joined Telugu Desam Party and swiftly rose through the ranks, earning the trust and admiration of his constituents. Rajappa's political career spans several significant roles and accomplishments. </p>
+
+            </div>
+
+            <div class="el-content2">
+                <h3>Ministerial Positions</h3>
+                <p>Rajappa was entrusted with ministerial responsibilities. He served as MLC from 2007 to 2013. where he implemented progressive policies and spearheaded initiatives that contributed to the overall growth of the state. His tenure witnessed significant advancements in sectors and brought about positive transformations. </p>
+
+            </div>
+
+        </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <script>
+    
+                    const image = document.querySelector(".rajappa-new");
+                    const quotes = document.querySelectorAll(".quote-container");
+                    
+                    image.addEventListener("animationend", function() {
+                      quotes.forEach((quote, index) => {
+                        setTimeout(() => {
+                          quote.classList.add("show-quote");
+                        }, index * 2000);
+                      });
+                    });
+                  </script>
+        </body>
+    </head>
+</html>
