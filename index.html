@@ -328,19 +328,36 @@
                 background-size: cover;
                 height:100vh;
                 display: flex;
-                justify-content: center;
                 align-items: center;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                
+                overflow-x: scroll;
+                scroll-snap-type: x mandatory;
+                scroll-padding: 24px;
+                border-radius:15px;
+                -ms-overflow-style: none; 
+                scrollbar-width: none;
+               
 
+            }
+            .latest-container::-webkit-scrollbar{
+                display: none;
+            }
+            .latest-start{
+                color:#4CAF50;
+                padding-left: 20px;
+                
+                
             }
             .latest-container h1{
                 color:rgb(12, 12, 12);
+                
             }
             .l-image-card{
-                width:18vw;
+                width:30vw;
                 margin:10px;
                 padding: 10px;
+                
+                
             }
             .l-image-card h1,p{
                 padding-left: 5px;
@@ -359,8 +376,8 @@
                 display: none;
             }
             .l-image-card img{
-                height:42vh;
-                width:18vw;
+                height:60vh;
+                width:30vw;
                 position:relative;
                 
                 padding-bottom:0px;
@@ -383,16 +400,22 @@
                 background-size: cover;
                 height:150px;
                 display: flex;
-                justify-content: center;
+                overflow-x: scroll;
+                -ms-overflow-style: none; 
+                scrollbar-width: none;
                 
                 
                 
             }
+            .latest-container-mobile::-webkit-scrollbar{
+                display: none;
+            }
+            
             .latest-heading-mobile{
                 font-size:10px;
             }
             .l-image-card-mobile{
-                width:23vw;
+                width:35vw;
                 margin:5px;
                 padding: 5px;
                 
@@ -411,9 +434,10 @@
                 display: none;
             }
             .l-image-card-mobile img{
-                height:10vh;
-                width:23vw;
+                height:20vh;
+                width:30vw;
                 position:relative;
+                margin-top: 30px;
                 
                 padding-bottom:0px;
             }
@@ -426,6 +450,12 @@
             .space{
                 height:800px;
                 display:none;
+            }
+            .latest-head-mobile{
+                color:#4CAF50;
+                text-align: center;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size:15px;
             }
 
 
@@ -606,11 +636,10 @@
 
 
 
-
+                    
+                
                 <div class="latest-container">
-                    <div>
-                        <h1>Latest Activity</h1>
-                    </div>
+                    <h1 class="latest-start" style="color: rgb(236, 197, 197);">Latest Activity</h1>
                     <div class="l-card">
                         <div class="l-image-card">
                             <img src="images\rg-2.JPG"/>
@@ -650,13 +679,55 @@
                                  quality of life.</p>
                         </div>
                     </div>
+
+
+
+                    <div class="l-card">
+                        <div class="l-image-card">
+                            <img src="images\rg-12.JPG"/>
+                            <h1 class="latest-heading" style="color:white">Advocacy for Rural Development</h1>
+                            <p class="latest-description">Chinna Rajappa's advocacy for rural development has been a cornerstone
+                                 of his political career. He recognized the significance of uplifting 
+                                 rural communities and ensuring their holistic growth. Through his efforts, 
+                                 he championed the cause of agricultural development, rural infrastructure, 
+                                 and poverty alleviation. His initiatives aimed to bridge the gap between 
+                                 urban and rural areas, empowering the marginalized and improving their 
+                                 quality of life.</p>
+                        </div>
+                    </div>
+                    <div class="l-card">
+                        <div class="l-image-card">
+                            <img src="images\136749766_496174774700420_1644050917513166079_n.jpg"/>
+                            <h1 class="latest-heading" style="color:white">Advocacy for Rural Development</h1>
+                            <p class="latest-description">Chinna Rajappa's advocacy for rural development has been a cornerstone
+                                 of his political career. He recognized the significance of uplifting 
+                                 rural communities and ensuring their holistic growth. Through his efforts, 
+                                 he championed the cause of agricultural development, rural infrastructure, 
+                                 and poverty alleviation. His initiatives aimed to bridge the gap between 
+                                 urban and rural areas, empowering the marginalized and improving their 
+                                 quality of life.</p>
+                        </div>
+                    </div>
+                    <div class="l-card">
+                        <div class="l-image-card">
+                            <img src="images\WhatsApp Image 2023-07-28 at 10.03.05 AM (1).jpeg"/>
+                            <h1 class="latest-heading" style="color:white">Advocacy for Rural Development</h1>
+                            <p class="latest-description">Chinna Rajappa's advocacy for rural development has been a cornerstone
+                                 of his political career. He recognized the significance of uplifting 
+                                 rural communities and ensuring their holistic growth. Through his efforts, 
+                                 he championed the cause of agricultural development, rural infrastructure, 
+                                 and poverty alleviation. His initiatives aimed to bridge the gap between 
+                                 urban and rural areas, empowering the marginalized and improving their 
+                                 quality of life.</p>
+                        </div>
+                    </div>
                     
         
                 </div>
                 <div class="space"></div>
                 <div class="hide-container">
                 <div>
-                    <h1>Latest Activity</h1>
+                    <h1 class="latest-head-mobile">Latest Activity</h1>
                 </div>
                 <div>
                 <div class="latest-container-mobile">
@@ -700,6 +771,35 @@
                                  quality of life.</p>
                         </div>
                     </div>
+
+
+                    <div class="l-card-mobile">
+                        <div class="l-image-card-mobile">
+                            <img src="images\136749766_496174774700420_1644050917513166079_n.jpg"/>
+                            <h1 class="latest-heading-mobile" style="color:white">Advocacy for Rural Development</h1>
+                            <p class="latest-description-mobile">Chinna Rajappa's advocacy for rural development has been a cornerstone
+                                 of his political career. He recognized the significance of uplifting 
+                                 rural communities and ensuring their holistic growth. Through his efforts, 
+                                 he championed the cause of agricultural development, rural infrastructure, 
+                                 and poverty alleviation. His initiatives aimed to bridge the gap between 
+                                 urban and rural areas, empowering the marginalized and improving their 
+                                 quality of life.</p>
+                        </div>
+                    </div>
+                    <div class="l-card-mobile">
+                        <div class="l-image-card-mobile">
+                            <img src="images\WhatsApp Image 2023-07-28 at 10.03.05 AM (1).jpeg"/>
+                            <h1 class="latest-heading-mobile" style="color:white">Advocacy for Rural Development</h1>
+                            <p class="latest-description-mobile">Chinna Rajappa's advocacy for rural development has been a cornerstone
+                                 of his political career. He recognized the significance of uplifting 
+                                 rural communities and ensuring their holistic growth. Through his efforts, 
+                                 he championed the cause of agricultural development, rural infrastructure, 
+                                 and poverty alleviation. His initiatives aimed to bridge the gap between 
+                                 urban and rural areas, empowering the marginalized and improving their 
+                                 quality of life.</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
 
