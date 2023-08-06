@@ -179,11 +179,15 @@
   background-color: #4CAF50;
   color: white;
   padding: 10px;
+  margin-left:px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  
 }
-
+.btn{
+    margin-left:-90px;
+}
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
@@ -453,7 +457,7 @@
                 font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
             .space{
-                height:800px;
+                height:900px;
                 display:none;
             }
             .latest-head-mobile{
@@ -504,6 +508,7 @@
                 font-size:20px;
                 font-weight:800;
                 padding-left:30px;
+                padding-top: 20px;
             }
             .gallery-para{
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -550,6 +555,7 @@
                 font-size:20px;
                 font-weight:800;
                 padding-left:15px;
+                padding-top: 20px;
             }
             .gallery-mobile{
                 background-color: rgb(247, 224, 227);
@@ -689,7 +695,7 @@
                     </ul>
                 </div>
                 <div class="dropdown">
-                    <button onclick="toggleDropdown()">Menu</button>
+                    <button onclick="toggleDropdown()" class="btn">Menu</button>
                     <div id="myDropdown" class="dropdown-content">
                       <a href="#home">Home</a>
                       <a href="#about">Biography</a>
