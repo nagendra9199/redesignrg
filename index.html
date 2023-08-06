@@ -180,19 +180,17 @@
   background-color: #4CAF50;
   color: white;
   padding: 10px;
-  margin-left:px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  margin-left:-90px;
   
 }
-.btn{
-    margin-left:-90px;
-}
+
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  margin-left:-140px;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -760,6 +758,7 @@
                 .dropdown button{
                     border-radius:5px;
                     box-shadow: 2px 2px 5px black;
+                    
                 }
                 .dropdown-content{
                     background-color: #9ab7cc;
@@ -767,7 +766,6 @@
                     color:black;
                     border-radius:10px;
                     margin-top:10px;
-                    left:-200%;
                 }
                 .latest-container{
                     display: none;
@@ -815,7 +813,7 @@
                     </ul>
                 </div>
                 <div class="dropdown">
-                    <button onclick="toggleDropdown()" class="btn">Menu</button>
+                    <button onclick="toggleDropdown()">Menu</button>
                     <div id="myDropdown" class="dropdown-content">
                       <a href="#home">Home</a>
                       <a href="#about">Biography</a>
