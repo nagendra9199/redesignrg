@@ -230,7 +230,7 @@
                 display:flex;
                 flex-direction:row;
                 margin-top:10px;
-                font-family: cursive;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 line-height:01;
                 color:rgb(90, 86, 86);
 
@@ -257,20 +257,21 @@
                 box-shadow: 10px 2px 20px 2px green;
                 border-radius:100px 0px 100px 0px;
                 width: 40vw;
-                height: 20vh;
+                height: 22%;
                 position:absolute;
                 
                 top:130%;
                 left: -50%; /* Initially hides the content off-screen to the left */
                 background-color: white;
                 transition: left 1s ease-in-out; 
+                
             }
             .el-content1{
                 padding:20px;
                 box-shadow: 10px 2px 20px 2px green;
                 border-radius:100px 0px 100px 0px;
                 width: 40%;
-                height: 20%;
+                height: 22%;
                 position:absolute;
                 left:60;
                 top:160%;
@@ -283,7 +284,7 @@
                 box-shadow: 10px 2px 20px 2px green;
                 border-radius:100px 0px 100px 0px;
                 width: 40%;
-                height: 20%;
+                height: 22%;
                 position:absolute;
                 left:60;
                 top:190%;
@@ -466,6 +467,88 @@
 
 
 
+            .gallery-images{
+                height:28vh;
+                width:20vw;
+                border-radius: 10px;
+            }
+            .gallery-para-card{
+                background-color:rgb(93, 163, 163);
+                width:17vw;
+                padding-left: 8px;
+                border-radius:10px;
+                margin:-30px 13px;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight:bold;
+                margin-bottom:20px;
+                
+                
+            }
+            .gallery-card-container{
+                display: flex;
+                flex-direction: column;
+                padding:10px
+
+            }
+            .gallery-side-line{
+                background-color: blueviolet;
+                height:20px;
+                width:0px;
+                
+            }
+            .gallery-row-flex-container{
+                display: flex;
+                width:100%;
+                justify-content: center;
+            }
+            .gallery-heading{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size:20px;
+                font-weight:800;
+                padding-left:30px;
+            }
+            .gallery-para{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                text-decoration: underline;
+                padding-left: 30px;
+            }
+            .gallery-images-mobile{
+                height:100px;
+                border-radius:8px;
+                width:120px;
+            }
+            .gallery-card-container-mobile{
+                display: flex;
+                flex-direction: column;
+                padding:7px;
+                
+            }
+            .gallery-para-card-mobile{
+                background-color:rgb(93, 163, 163);
+                width:100px;
+                height:100px;
+                padding-left: 8px;
+                border-radius:10px;
+                margin:-30px 13px;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin-bottom:20px;
+            }
+            .gallery-para-mobile{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                font-size:10px;
+                text-decoration: underline;
+                padding-left: 30px;
+            }
+            .gallery-row-flex-container-mobile{
+                display: flex;
+                width:100%;
+                justify-content: center;
+            }
+
+
+
 
 
             
@@ -550,6 +633,9 @@
                 }
                 .space{
                     display:block;
+                }
+                .gallery-mobile-block{
+                    display: none;
                 }
                 
             }
@@ -791,10 +877,121 @@
                             </p>
                         </div>
                     </div>
-                    
                 </div>
+                
+            </div>
             </div>
 
+
+
+
+
+
+            <div class="display-side-line"></div>
+        <div class="gallery-mobile-block">
+        <div>
+            
+            <h1 class="gallery-heading">PHOTO GALLERY</h1>
+            <p class="gallery-para">See moore about our N.Chinarajappa Activities</p>
+        </div>
+        <div>
+            <div class="gallery-row-flex-container">
+                <div class="gallery-card-container">
+                    <img src="images\DSC_0613.jpg" class="gallery-images"/>
+                    <div class="gallery-para-card"><p>Rajappa meets central home minister</p></div>
+                </div>
+                <div class="gallery-card-container">
+                    <img src="images\06-VJ-CHINARAJAPPA (1).jpg" class="gallery-images"/>
+                    <div class="gallery-para-card"><p>Rajappa meets central home minister</p></div>
+                </div>
+                <div class="gallery-card-container">
+                    <img src="images\800px-thumbnail.jpg" class="gallery-images"/>
+                    <div class="gallery-para-card"><p>Rajappa meets central home minister</p></div>
+                </div>
+                <div class="gallery-card-container">
+                    <img src="images\6189_rajjappa.jpg" class="gallery-images"/>
+                    <div class="gallery-para-card"><p>Rajappa meets central home minister</p></div>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-row-flex-container">
+                <div class="gallery-card-container">
+                    <img src="images\6942_Deputy-CM-Chinarajappa-addr.jpg" class="gallery-images"/>
+                    <div class="gallery-para-card"><p>Rajappa meets central home minister</p></div>
+                </div>
+                <div class="gallery-card-container">
+                    <img src="images\7500_Deputy CM Chinarajappa.jpg" class="gallery-images"/>
+                    <div class="gallery-para-card"><p>Rajappa meets central home minister</p></div>
+                </div>
+                <div class="gallery-card-container">
+                    <img src="images\48371464_2315959675103700_6963257424182509568_o.jpg" class="gallery-images"/>
+                    <div class="gallery-para-card"><p>Rajappa meets central home minister</p></div>
+                </div>
+                <div class="gallery-card-container">
+                    <img src="images\55961811_2485787354787597_1760917706388799488_o.jpg" class="gallery-images"/>
+                    <div class="gallery-para-card"><p>Rajappa meets central home minister</p></div>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-row-flex-container">
+                <div class="gallery-card-container">
+                    <img src="images\136749766_496174774700420_1644050917513166079_n.jpg" class="gallery-images"/>
+                    <div class="gallery-para-card"><p>Rajappa meets central home minister</p></div>
+                </div>
+                <div class="gallery-card-container">
+                    <img src="images\dc-Cover-5labqo4vq8014i14i34anv2eg5-20160505063829.Medi.jpeg" class="gallery-images"/>
+                    <div class="gallery-para-card"><p>Rajappa meets central home minister</p></div>
+                </div>
+                <div class="gallery-card-container">
+                    <img src="images\DY_CM_7_9366.jpg" class="gallery-images"/>
+                    <div class="gallery-para-card"><p>Rajappa meets central home minister</p></div>
+                </div>
+                <div class="gallery-card-container">
+                    <img src="images\rg-9.JPG" class="gallery-images"/>
+                    <div class="gallery-para-card"><p>Rajappa meets central home minister</p></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    
+
+
+
+
+
+            <div class="gallery-mobile">
+                <div>
+            
+                    <h1 class="gallery-heading-mobile">PHOTO GALLERY</h1>
+                    <p class="gallery-para-mobile">See moore about our N.Chinarajappa Activities</p>
+                </div>
+                <div>
+                    <div class="gallery-row-flex-container-mobile">
+                        <div class="gallery-card-container-mobile">
+                            <img src="images\DSC_0613.jpg" class="gallery-images-mobile"/>
+                            <div class="gallery-para-card-mobile"><p>Rajappa meets central home minister</p></div>
+                        </div>
+                        <div class="gallery-card-container-mobile">
+                            <img src="images\06-VJ-CHINARAJAPPA (1).jpg" class="gallery-images-mobile"/>
+                            <div class="gallery-para-card-mobile"><p>Rajappa meets central home minister</p></div>
+                        </div>
+                        <div class="gallery-card-container-mobile">
+                            <img src="images\800px-thumbnail.jpg" class="gallery-images-mobile"/>
+                            <div class="gallery-para-card-mobile"><p>Rajappa meets central home minister</p></div>
+                        </div>
+                        </div>
+            </div>
+
+
+
+            
 
 
 
