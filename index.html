@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -90,7 +91,7 @@
                 
             }
             .animation-container img{
-                transform: scale(2);
+                transform: scale(1);
                 
             }
 
@@ -250,7 +251,7 @@
             display: block;
             position:relative;
             right:-190%;
-            top:-10%;
+            top:-2%;
   
          }
             .el-content{
@@ -261,7 +262,7 @@
                 height: 22%;
                 position:absolute;
                 
-                top:130%;
+                top:140%;
                 left: -50%; /* Initially hides the content off-screen to the left */
                 background-color: white;
                 transition: left 1s ease-in-out; 
@@ -275,7 +276,7 @@
                 height: 22%;
                 position:absolute;
                 left:60;
-                top:160%;
+                top:170%;
                 left: -100%; /* Initially hides the content off-screen to the left */
                 background-color: white;
                 transition: left 1.5s ease-in-out; 
@@ -288,7 +289,7 @@
                 height: 22%;
                 position:absolute;
                 left:60;
-                top:190%;
+                top:200%;
                 left: -100%; /* Initially hides the content off-screen to the left */
                 background-color: white;
                 transition:  2s ease-in-out;
@@ -338,6 +339,7 @@
                 border-radius:15px;
                 -ms-overflow-style: none; 
                 scrollbar-width: none;
+                margin-top:60px
                
 
             }
@@ -533,6 +535,9 @@
                 border-radius:8px;
                 width:100px;
             }
+            .gallery-mobile-block{
+                background-color: rgb(241, 243, 132);
+            }
             .gallery-card-container-mobile{
                 display: flex;
                 flex-direction: column;
@@ -698,6 +703,110 @@
 
 
 
+
+
+
+
+
+
+
+
+
+.height{
+    height:200px;
+}
+.end-container{
+            background-color:rgb(241, 243, 132);
+            width:100%;
+            padding:10px;
+            border-radius:15px;
+        }
+        .quick-links-container{
+            display: flex;
+            flex-direction: column;
+            padding-bottom:20px;
+            
+        }
+        .quick-link{
+            text-decoration: none;
+            color:black;
+            font-family: cursive;
+            padding-left:20px
+
+        }
+        .end-image{
+            height:60px;
+            border-radius: 50px;
+            box-shadow: 10px 10px 10px rgb(241, 243, 132);
+            margin-right:20px;
+            margin-top:10px;
+        }
+        .end-logo-title-container{
+            display: flex;
+            justify-content: space-between;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+        .end-image-flex{
+            display: flex;
+        }
+
+
+
+
+
+
+.center{
+    margin-left: -10%;
+}
+
+
+
+.social {
+
+  display: flex;
+  flex-direction: row;
+  
+}
+.social {
+    padding-left: 0px;
+  }
+  .li-1 {
+    color: rgba(167, 146, 129, 0.6);
+    list-style-type: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 1%;
+    border: 1px solid rgba(167, 146, 129, 0.4);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: ease .3s;
+    &:hover {
+      
+      border: 1px solid rgba(167, 146, 129, 1);
+    }
+  }
+
+
+.social:hover > .li-1 {
+  opacity: 0.5;
+  color: rgb(248, 247, 247);
+  background: linear-gradient(to bottom,rgb(223, 8, 8),rgb(217, 255, 0));
+}
+
+.social:hover > .li-1:hover {
+  opacity: 1;
+}
+#social-test {
+  text-align:center;
+  font-size: 30px;
+}
+
+
+
+
             
 
             @media screen and (max-width:600px) {
@@ -792,6 +901,7 @@
                 }
                 .gallery-mobile-block{
                     display: none;
+                    
                 }
                 .gallery-mobile{
                     display:block
@@ -946,7 +1056,7 @@
                 
                 <div class="slideshow-container">
                     <div class="animation-container">
-                  <img src="images\mainrg.png" class="rajappa-new " />
+                  <img src="images\Rajappa_Garu_2-removebg-preview.png" class="rajappa-new " />
                   <div class="quote-container" id="quote1"> A Remarkable Journey of Dedication and Leadership </div>
                   
                 </div>
@@ -1350,6 +1460,46 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+
+
+
+            <div class="height"></div>
+            <div class="end-container">
+                <p style="text-align: center; font-family: sans-serif;">Get Exclusive News and Updates</p>
+    
+                <div class="end-logo-title-container">
+                    <div class="end-image-flex">
+                    <img src="https://m.media-amazon.com/images/I/71VRd3FvgRL._AC_UF1000,1000_QL80_.jpg" class="end-image"/>
+                    <h1>N Chinarajappa</h1>
+                    </div>
+                        <div class="center">
+                            <div id="social-test">
+                            <ul class="social">
+                              <li type="none" class="li-1"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                              <li type="none" class="li-1"><i class="fa fa-twitter" aria-hidden="true"></i>
+                            </li>
+                              <li type="none" class="li-1"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                            </ul>
+                            </div>
+                        </div>
+    
+    
+                <div class="quick-links-container">
+                <h1>Quick Links</h1>
+                <a href="" class="quick-link">Home</a>
+                <a href="" class="quick-link">Biography</a>
+                <a href="" class="quick-link">Latest Activities</a>
+                <a href="" class="quick-link">Gallery</a>
+                <a href="" class="quick-link">Social Media</a>
+    
+                </div>
+                
+                </div>
+    
+                <p style="text-align: center; font-family: cursive;">Copyright <span>&copy</span> 2023 Nimmakayala Chinarajappa all rights reserved.</p>
+    
             </div>
 
             
