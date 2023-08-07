@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
              .header{
                 background-color:#ffffff;
@@ -355,9 +355,10 @@
                 
             }
             .l-image-card{
-                width:30vw;
+                width:20vw;
                 margin:10px;
                 padding: 10px;
+                
                 
                 
             }
@@ -378,10 +379,10 @@
                 display: none;
             }
             .l-image-card img{
-                height:60vh;
-                width:30vw;
+                height:40vh;
+                width:20vw;
                 position:relative;
-                
+                border-radius: 10px;
                 padding-bottom:0px;
             }
             
@@ -528,11 +529,11 @@
             }
             .gallery-para-card-mobile{
                 background-color:rgb(93, 163, 163);
-                width:100px;
+                width:80px;
                 height:60px;
                 padding-left: 8px;
                 border-radius:10px;
-                margin:-30px 5px;
+                margin:-30px 6px;
                 font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 margin-bottom:20px;
                 
@@ -566,18 +567,18 @@
 
 
             .social-container{
-    background-image: url("images/social media pic.jpg");
+    background-image: url("images/rg-9.JPG");
     background-size: cover;
     height:25vw
 }
 .social-container h1{
-    color:#ffffff;
+    color:#141414;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     padding-top:50px;
 }
 .social-para{
-    color:#ffffff;
+    color:#1a1717;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -631,7 +632,7 @@
     padding-top:50px;
 }
 .twitter-img{
-    height:50px;
+    height:40px;
     width:40px;
     padding-top:10px;
     padding-left:2px;
@@ -677,8 +678,9 @@
 }
 .twitter-logo{
     height:70px;
-    width:70px;
+    width:73px;
 }
+
 
 
 
@@ -805,7 +807,7 @@
                 <div class="nav">
                     <ul class="navbar">
                         <li class="nav-items"><a href="#homeContainer" class="list">Home</a></li>
-                        <li class="nav-items"><a href="#bioContainer" class="list">Biography</a></li>
+                        <li class="nav-items"><a href="#biographyContainer" class="list">Biography</a></li>
                         <li class="nav-items"><a href="#latestContainer" class="list">latest Activities</a></li>
                         <li class="nav-items"><a href="#galleryContainer" class="list">Gallery</a></li>
                         <li class="nav-items"><a href="#socialContainer" class="list">Social Media</a></li>
@@ -815,11 +817,11 @@
                 <div class="dropdown">
                     <button onclick="toggleDropdown()">Menu</button>
                     <div id="myDropdown" class="dropdown-content">
-                      <a href="#home">Home</a>
-                      <a href="#about">Biography</a>
-                      <a href="#contact">Latest Activities</a>
-                      <a href="#Gallery">Gallery</a>
-                      <a href="#contact">Social Media</a>
+                      <a href="#homeContainer">Home</a>
+                      <a href="#biographyContainer">Biography</a>
+                      <a href="#latestMobileContainer">Latest Activities</a>
+                      <a href="#galleryMobileContainer">Gallery</a>
+                      <a href="#socialContainer">Social Media</a>
                     </div>
                   </div>
 
@@ -837,9 +839,9 @@
                   </div>
                 </div>
 
-                <div class="biography-main-container">
+                <div class="biography-main-container" id="biographyContainer">
 
-                    <div class="bio-head"><h1>BIOGRAPHY</h1></div>
+                    <div class="bio-head" ><h1>BIOGRAPHY</h1></div>
 
         <div class ="el">
             <div class="el-img">
@@ -875,7 +877,7 @@
 
                     
                 
-                <div class="latest-container">
+                <div class="latest-container" id="latestContainer">
                     <h1 class="latest-start" style="color: rgb(236, 197, 197);">Latest Activity</h1>
                     <div class="l-card">
                         <div class="l-image-card">
@@ -951,7 +953,7 @@
                 <div class="space"></div>
                 <div class="hide-container">
                 <div>
-                    <h1 class="latest-head-mobile">Latest Activity</h1>
+                    <h1 class="latest-head-mobile" id="latestMobileContainer">Latest Activity</h1>
                 </div>
                 <div>
                 <div class="latest-container-mobile">
@@ -1033,7 +1035,7 @@
 
 
             <div class="display-side-line"></div>
-        <div class="gallery-mobile-block">
+        <div class="gallery-mobile-block" id="galleryContainer">
         <div>
             
             <h1 class="gallery-heading">PHOTO GALLERY</h1>
@@ -1111,7 +1113,7 @@
 
 
 
-            <div class="gallery-mobile">
+            <div class="gallery-mobile" id="galleryMobileContainer">
                 <div>
             
                     <h1 class="gallery-heading-mobile">PHOTO GALLERY</h1>
