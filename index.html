@@ -245,7 +245,7 @@
             
            .el-img img{
 
-            box-shadow:1px 1px 20px 6px rgb(37, 155, 43);
+            box-shadow:1px 1px 20px 6px ;
             border-radius: 30px;
             transform: scale(0.8);
             display: block;
@@ -256,7 +256,7 @@
          }
             .el-content{
                 padding:20px;
-                box-shadow: 10px 2px 20px 2px green;
+                box-shadow: 10px 2px 20px 2px  rgb(241, 243, 132);
                 border-radius:100px 0px 100px 0px;
                 width: 40vw;
                 height: 22%;
@@ -270,7 +270,7 @@
             }
             .el-content1{
                 padding:20px;
-                box-shadow: 10px 2px 20px 2px green;
+                box-shadow: 10px 2px 20px 2px  rgb(241, 243, 132);
                 border-radius:100px 0px 100px 0px;
                 width: 40%;
                 height: 22%;
@@ -283,7 +283,7 @@
             }
             .el-content2{
                 padding:20px;
-                box-shadow: 10px 2px 20px 2px green;
+                box-shadow: 10px 2px 20px 2px  rgb(241, 243, 132);
                 border-radius:100px 0px 100px 0px;
                 width: 40%;
                 height: 22%;
@@ -314,7 +314,7 @@
                 padding: 10px;
                 background-color: white;
                 border-radius: 10px;
-                box-shadow: 5px 5px 5px green;
+                box-shadow: 5px 5px 5px  rgb(241, 243, 132);
                 
                 background-image: linear-gradient(to bottom,rgb(55, 141, 5) 80%,white);
             }
@@ -801,7 +801,98 @@
 }
 #social-test {
   text-align:center;
-  font-size: 30px;
+  font-size: 15px;
+}
+.end-container-mobile{
+    display: none;
+}
+.end-container-mobile{
+    background-color:rgb(241, 243, 132);
+    width:100%;
+    padding:10px;
+    border-radius:10px;
+}
+.quick-links-container-mobile{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:10px;
+    
+}
+.quick-link-mobile{
+            text-decoration: none;
+            color:black;
+            font-family: cursive;
+            padding-left:20px
+
+        }
+        .end-image-mobile{
+            height:30px;
+            border-radius: 50px;
+            box-shadow: 10px 10px 10px rgb(241, 243, 132);
+            margin-right:10px;
+            margin-top:10px;
+        }
+        .end-logo-title-container-mobile{
+            display: flex;
+            justify-content: space-between;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+        .end-image-flex-mobile{
+            display: flex;
+        }
+
+
+
+
+
+
+.center-mobile{
+    margin-left: -20%;
+}
+
+
+
+.social-mobile {
+
+  display: flex;
+  flex-direction: row;
+  
+}
+.social-mobile {
+    padding-left: 0px;
+  }
+  .li-1-mobile {
+    color: rgba(167, 146, 129, 0.6);
+    list-style-type: none;
+    width: 20px;
+    height: 25px;
+    line-height: 25px;
+    padding: 1%;
+    border: 1px solid rgba(167, 146, 129, 0.4);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: ease .3s;
+    &:hover {
+      
+      border: 1px solid rgba(167, 146, 129, 1);
+    }
+  }
+
+
+.social-mobile:hover > .li-1-mobile {
+  opacity: 0.5;
+  color: rgb(248, 247, 247);
+  background: linear-gradient(to bottom,rgb(223, 8, 8),rgb(217, 255, 0));
+}
+
+.social-mobile:hover > .li-1-mobile:hover {
+  opacity: 1;
+}
+#social-test-mobile {
+  text-align:center;
+  font-size: 15px;
 }
 
 
@@ -1006,6 +1097,12 @@
                     justify-content: center;
                     justify-content: space-around;
                     padding-top:25px;
+                }
+                .end-container{
+                    display: none;
+                }
+                .end-container-mobile{
+                    display: block;
                 }
 
 
@@ -1414,8 +1511,8 @@
 
 
             <div class="social-container" id="socialContainer">
-                <h1>Social Media</h1>
-                <p class="social-para">It is a long established fact that a reader will be distracted by the readable content of a page</p>
+                <h1 style="color: rgb(241, 243, 132);">Social Media</h1>
+                <p class="social-para" style="color: rgb(241, 243, 132);">It is a long established fact that a reader will be distracted by the readable content of a page</p>
                 <div class="social-icons-flex">
                 <div class="facebook-icon">
                     <div>
@@ -1493,6 +1590,44 @@
                 <a href="" class="quick-link">Latest Activities</a>
                 <a href="" class="quick-link">Gallery</a>
                 <a href="" class="quick-link">Social Media</a>
+    
+                </div>
+                
+                </div>
+    
+                <p style="text-align: center; font-family: cursive;">Copyright <span>&copy</span> 2023 Nimmakayala Chinarajappa all rights reserved.</p>
+    
+            </div>
+
+
+
+            <div class="end-container-mobile">
+                <p style="text-align: center; font-family: sans-serif; font-size: 12px;">Get Exclusive News and Updates</p>
+    
+                <div class="end-logo-title-container-mobile">
+                    <div class="end-image-flex-mobile">
+                    <img src="https://m.media-amazon.com/images/I/71VRd3FvgRL._AC_UF1000,1000_QL80_.jpg" class="end-image-mobile"/>
+                    <h1 style="font-size: 15px;">N Chinarajappa</h1>
+                    </div>
+                        <div class="center-mobile" style="margin-top: 50px;">
+                            <div id="social-test-mobile">
+                            <ul class="social-mobile">
+                              <li type="none" class="li-1"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                              <li type="none" class="li-1"><i class="fa fa-twitter" aria-hidden="true"></i>
+                            </li>
+                              <li type="none" class="li-1"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                            </ul>
+                            </div>
+                        </div>
+    
+    
+                <div class="quick-links-container-mobile"  style="font-size: 10px;">
+                <h1 style="font-size:15px;">Quick Links</h1>
+                <a href="" class="quick-link-mobile">Home</a>
+                <a href="" class="quick-link-mobile">Biography</a>
+                <a href="" class="quick-link-mobile">Latest Activities</a>
+                <a href="" class="quick-link-mobile">Gallery</a>
+                <a href="" class="quick-link-mobile">Social Media</a>
     
                 </div>
                 
